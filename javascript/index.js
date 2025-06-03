@@ -58,12 +58,11 @@ function updateCity(event) {
             "h:mm:ss [<small>]A[</small>]"
           )}</div>
         </div>
+        <a href="index.html" class="home">Back to All Cities</a>
         `;
 }
 updateTime();
 setInterval(updateTime, 1000);
-
-setInterval(updateCity, 1000);
 
 let citiesSelectElement = document.querySelector("#citySelect");
 citiesSelectElement.addEventListener("change", updateCity);
