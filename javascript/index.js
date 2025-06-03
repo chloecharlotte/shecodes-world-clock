@@ -60,6 +60,9 @@ function updateCity(event) {
         </div>
         <a href="index.html" class="home">Back to All Cities</a>
         `;
+  setTimeout(() => {
+    updateCity(event);
+  }, 1000);
 }
 updateTime();
 setInterval(updateTime, 1000);
